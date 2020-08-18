@@ -1,4 +1,8 @@
 <script>
+  /*
+   * More details about Tinro router:
+   * https://github.com/AlexxNB/tinro
+   */
   import { Route } from "tinro";
   import Home from "components/Home.svelte";
   import About from "components/About.svelte";
