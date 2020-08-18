@@ -4,6 +4,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
+import includePaths from 'rollup-plugin-includepaths';
 
 const production = !process.env.ROLLUP_WATCH;
 const preprocess = sveltePreprocess({
@@ -71,6 +72,7 @@ export default {
             dedupe: ['svelte'],
         }),
         commonjs(),
+        includePaths({ paths: ['./src'] }),
 
         // In dev mode, call `npm run start` once
         // the bundle has been generated
