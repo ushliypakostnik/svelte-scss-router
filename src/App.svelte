@@ -9,7 +9,7 @@
   import Contacts from "components/Contacts.svelte";
 </script>
 
-<style lang="scss">
+<style lang="scss" global>
   /* Import global styles only in to the root component */
   @import "./styles/global";
 
