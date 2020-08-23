@@ -4,10 +4,10 @@
    * https://github.com/AlexxNB/tinro
    */
   import { Route } from "tinro";
-  import Page404 from "components/layout/Page404.svelte";
   import Home from "components/views/Home.svelte";
   import About from "components/views/About.svelte";
   import Contacts from "components/views/Contacts.svelte";
+  import Page404 from "components/views/Page404.svelte";
 </script>
 
 <style lang="scss" global>
